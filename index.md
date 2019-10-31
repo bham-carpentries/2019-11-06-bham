@@ -1,11 +1,13 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
 venue: "University of Birmingham"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "UG08 Murray Learning Centre"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+address: "UG08 Murray Learning Centre (Wed)/Muirhead 112 (Fri)"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "gb"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
 latitude: "52.450832"     # decimal latitude of workshop venue (use https://www.latlong.net/)
 longitude: "-1.935599"    # decimal longitude of the workshop venue (use https://www.latlong.net)
+latitude_2: "52.451780"     # decimal latitude of workshop venue (use https://www.latlong.net/)
+longitude_2: "-1.929269"    # decimal longitude of the workshop venue (use https://www.latlong.net)
 humandate: "Wednesday 6th November and Friday 8th November"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "9:00 am - 5:00 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2019-11-06      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
@@ -115,10 +117,13 @@ address.
 <p id="where">
   <strong>Where:</strong>
   {{page.address}}.
-  Get directions with
+  Get directions with:
   <a href="//www.openstreetmap.org/?mlat={{page.latitude}}&mlon={{page.longitude}}&zoom=16">OpenStreetMap</a>
   or
-  <a href="//maps.google.com/maps?q={{page.latitude}},{{page.longitude}}">Google Maps</a>.
+  <a href="//maps.google.com/maps?q={{page.latitude}},{{page.longitude}}">Google Maps</a> (Murray Learning Centre),
+  <a href="//www.openstreetmap.org/?mlat={{page.latitude_2}}&mlon={{page.longitude_2}}&zoom=16">OpenStreetMap</a>
+  or
+  <a href="//maps.google.com/maps?q={{page.latitude_2}},{{page.longitude_2}}">Google Maps</a> (Muirhead).
 </p>
 {% endif %}
 
